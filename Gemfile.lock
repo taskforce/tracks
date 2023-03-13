@@ -101,7 +101,12 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
-    database_cleaner (1.99.0)
+    database_cleaner (2.0.2)
+      database_cleaner-active_record (>= 2, < 3)
+    database_cleaner-active_record (2.1.0)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
+    database_cleaner-core (2.0.1)
     diff-lcs (1.5.0)
     docile (1.4.0)
     e2mmap (0.1.0)
@@ -339,7 +344,7 @@ DEPENDENCIES
   byebug
   codeclimate-test-reporter (= 1.0.7)
   coffee-rails (~> 5.0.0)
-  database_cleaner (~> 1)
+  database_cleaner (~> 2)
   factory_bot_rails
   font-awesome-sass (~> 6.2.0)
   htmlentities
